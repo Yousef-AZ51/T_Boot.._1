@@ -1,0 +1,78 @@
+/* Global Rules */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/* ./Global Rules */
+
+/* Variables */
+:root {
+    --mainPadding: 10px;
+    --mainBorder: 1px solid black;
+    --mainMargin: 0 auto;
+    --main-Transition: 0.5s;
+}
+/* ./Variables */
+
+/* Global Values */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #FFF;
+}
+.container {
+    margin: var(--mainMargin);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+img {
+    display: block;
+}
+input {
+    outline: none;
+    border: var(--mainBorder);
+}
+button {
+    border: none;
+    outline: none;
+}
+/* ./Global Values */
+
+body::before {
+    content: "";
+    display: block;
+    height: 72px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 1px 10px 1px rgba(73, 73, 73, 0.445);
+}
+
+/* New Letter */
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+/* Boxes */
+.main-boxes .box .icon-b {
+    transition: 0.3s;
+}
+.main-boxes .box:hover .icon-b {
+    color: aqua;
+    transform: rotateY(180deg);
+}
+
+/* Finished */
